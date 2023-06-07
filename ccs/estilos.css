@@ -1,0 +1,205 @@
+/* RESETEO */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Configuracion del html */
+html{
+    font-size: 62.5%;  /* Ya no seria el 100% */
+}
+
+p{
+    font-size: 10px;   /* Ya no es 16px */
+}
+
+/* 1rem = 16px --> por defecto */
+/* AHORA 1 rem = 10px por el cambio en htm */
+
+.fondoNaranja{
+    background-color: rgb(255, 173, 79);
+}
+.fondofooter{
+    background-color: rgb(105, 105, 105);
+    height: 200px;
+}
+/* CLASE */
+.letranaranja{
+    color: rgb(235, 140, 16);
+    padding: 20px;
+    position: relative;
+    left: 35%;
+    }
+/* Tipos de lista, modificar lista */
+ul{
+    list-style-type: none;
+    display: flex;
+    right: 20px; top: 60px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav{
+    position: absolute;
+    top: 60px;
+    right: 10px;
+}
+
+li{
+    padding: 10px;
+    font-size: 20px;
+    color: #505050;
+}
+
+h3{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+a{
+    text-decoration: none;
+    color: #505050;
+}
+
+.wpp{
+    position: fixed; right: 0;
+    top: 80%;
+    height: 50px;
+    width: 50px;
+    padding: 40px;
+    border-radius: 20%;
+}
+
+.portada{
+    height: 100px;
+    width: 250px;
+    padding: 30px;
+}
+
+/* Configuracion Formularios y sus partes */
+form{
+    font-size: 15px;
+    padding: 40px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+label{
+    margin: 10px;
+    color: #505050;
+}
+input{
+    margin: 10px;
+}
+
+/* Configuracion de los Hs */
+h1{
+    font-size: 9px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+h2{
+    font-size: 12px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+h3{
+    font-size: 15px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+h4{
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+h5{
+    font-size: 28px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+h6{
+    font-size: 40px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+/* Titulos y subtitulos de seccion */
+.tituloseccion{
+    padding: 5px;
+    color: #505050;
+}
+.subtituloseccion{
+    padding: 20px;
+    color: #505050;
+}
+.portadaseccion{
+    width: 100%;
+}
+.caja{
+    display: inline-block;
+    background-color: gainsboro;
+    margin: 50px;
+    height: 400px;
+    width: 270px;
+    border: 2px solid rgb(26, 25, 29);
+}
+.ed{
+    margin: 7%;
+}
+.tituloed{
+    margin: 7%;
+    color: #333333;
+}
+.recuadro{
+    display: inline-block;
+    background-color: rgb(241, 151, 33);
+    margin: 20px;
+    height: 30px;
+    width: 180px;
+    border: 2px solid rgb(26, 25, 29);
+}
+.recuadro1{
+    display: inline-block;
+    background-color: rgb(11, 161, 49);
+    margin: 20px;
+    height: 30px;
+    width: 180px;
+    border: 2px solid rgb(26, 25, 29);
+}
+.tituloed1{
+    margin: 5%;
+    color: #333333;
+}
+.recuadrop {
+    padding: 4%;
+    float: right;
+    width: 75%;
+}
+.recuadroimg {
+    float: left;
+    width: 29px;
+}
+.ulfooter{
+    display: inline;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.divfooter{
+    display: inline-block;
+    margin: 50px;
+}
+
+/* Configuracion cuadro ED */
+.recuadro2{
+    display: inline-block;
+    margin: 10px;
+    height: 30px;
+    width: 240px;
+}
+.recuadroimg2 {
+    float: right;
+    margin-right: 0%;
+    width: 29px;
+}
+.recuadrop2 {
+    margin-left: 4%;
+    float: left;
+    width: 75%;
+}
+.recuadrop3 {
+    margin-left: 7%;
+    float: left;
+    width: 65%;
+}
+.recuadro4 {
+    float: right;   
+}
