@@ -8,193 +8,229 @@
     <link rel="shortcut icon" href="../Imágenes/logo.png" type="image/x-icon"> <!-- Favicon -->
 
     <!-- CSS -->
+    <link rel="stylesheet" href="../ccs/bootstrap.min.css">
+
     <link rel="stylesheet" href="../ccs/estilos.css">
 </head>
 <body>
+    <div class="ContenedorTotal"> <!-- CONTENEDOR TOTAL -->
     
-    
-    <!-- ETIQUETAS SEMÁNTICAS! -->
-    <header class=fondoNaranja id="arriba2"> <!-- Encabezado -->
-        <img src="../Imágenes/portada.png" class="portada" alt="logo">
-        <nav> <!-- Menú de navegación -->
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="inverti.html">Invertí</a></li>
-                <li><a href="financiate.html">Financiate</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="estadisticas.html">Estadísticas</a></li>
-                <li><a href="Contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+            <!-- ETIQUETAS SEMÁNTICAS! -->
+            <header id="arriba" class="areaMenu"> <!-- Encabezado -->
+                    <img src="../Imágenes/portada.png" class="portada" alt="logo">
+                    <div class="navbar">
+                        <nav class="navbar navbar-expand-lg">
+                            <div class="container-fluid">
+                              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                              </button>
+                              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                <div class="navbar-nav">
+                                  <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                                  <a class="nav-link" href="inverti.html">Invertí</a>
+                                  <a class="nav-link" href="../Páginas/financiate.html">Financiate</a>
+                                  <a class="nav-link" href="../Páginas/nosotros.html">Nosotros</a>
+                                  <a class="nav-link" href="../Páginas/estadisticas.html">Estadísticas</a>
+                                  <a class="nav-link" href="../Páginas/Contacto.html">Contacto</a>
+                                </div>
+                              </div>
+                            </div>
+                          </nav>
+                    </div>
+            </header>
+            
+            <main> <!-- Contenido principal -->
+                <div class="areaTitulo">
+                    <h5 class="letranaranja">Proyectos con garantía hipotecaria</h5>
+                    <h4 class="subtituloseccion">Nuestros proyectos</h4>
+                        <div class="recuadroFinanciacion">
+                            <h3 class="recuadrop">En financiación</h3>
+                            <img src="../Imágenes/logoinversion.png" class="recuadroimg" alt="inv">  
+                        </div>
+                        <div class="recuadroEstudio">
+                            <h3 class="recuadrop">En estudio</h3>
+                            <img src="../Imágenes/logoestudio.png" class="recuadroimg" alt="inv">   
+                        </div>
+                        <div class="recuadroCerrado">
+                            <h3 class="recuadrop">Cerrados</h3>
+                            <img src="../Imágenes/logocerrado.png" class="recuadroimg" alt="inv">
+                        </div>
+                </div>
 
-    <main>
-        <h5 class="letranaranja">Conocé nuestras políticas e invertí seguro</h5>
-        <h4 class="subtituloseccion">Proyectos abiertos y próximos</h4>
-            <div class="recuadro">
-                <h3 class="recuadrop">En financiación</h3>
-                <img src="../Imágenes/logoinversion.png" class="recuadroimg" alt="inv">  
-            </div>
-            <div class="recuadro">
-                <h3 class="recuadrop">En estudio</h3>
-                <img src="../Imágenes/logoestudio.png" class="recuadroimg" alt="inv">   
-            </div>
-        <hr>
-        <div class="caja">
-            <div class="recuadro2">
-                <div class="recuadrop2">
-                    <h3>Campanario II</h3>
-                    <h1>Santa Fe | Edificio</h1>
+                <div class="areaProductos">
+                    <div class="cajaEstudio">
+                        <div class="recuadro2">
+                            <div class="recuadrop2">
+                                <h3>Campanario II</h3>
+                                <h1>Santa Fe | Edificio</h1>
+                            </div>
+                            <div>
+                                <img src="../Imágenes/logoestudio.png" class="recuadroimg2" alt="ed1">
+                            </div>
+                        <img src="../Imágenes/ed1.png" class="ed" alt="ed1" width="85%">
+                        <div>
+                            <h1 class="recuadrop3">$1.500.000</h1>
+                            <h1 class="recuadrop4">$0.000.000</h1>
+                        </div>
+                        <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 0%">0%</div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="cajaEstudio">
+                        <div class="recuadro2">
+                            <div class="recuadrop2">
+                                <h3>Country "Santomas"</h3>
+                                <h1>Santo Tomé | Loteo</h1>
+                            </div>
+                            <div>
+                                <img src="../Imágenes/logoestudio.png" class="recuadroimg2" alt="ed1">
+                            </div>
+                        <img src="../Imágenes/ed3.png" class="ed" alt="ed3" width="85%">
+                        <div>
+                            <h1 class="recuadrop3">$1.000.000</h1>
+                            <h1 class="recuadrop4">$0.000.000</h1>
+                        </div>
+                        <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 0%">0%</div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="cajaInversion">
+                        <div class="recuadro2">
+                            <div class="recuadrop2">
+                                <h3>CAM 103</h3>
+                                <h1>Santa Fe | Edificio</h1>
+                            </div>
+                            <div>
+                                <img src="../Imágenes/logoinversion.png" class="recuadroimg2" alt="ed1">
+                            </div>
+                        <img src="../Imágenes/ed2.png" class="ed" alt="ed2" width="85%">
+                        <div>
+                            <h1 class="recuadrop3">$1.900.000</h1>
+                            <h1 class="recuadrop4">$1.300.000</h1>
+                        </div>
+                        <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="79" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 79%">79%</div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="cajaInversion">
+                        <div class="recuadro2">
+                            <div class="recuadrop2">
+                                <h3>CAM 101</h3>
+                                <h1>Santa Fe | Edificio</h1>
+                            </div>
+                            <div>
+                                <img src="../Imágenes/logoinversion.png" class="recuadroimg2" alt="ed1">
+                            </div>
+                        <img src="../Imágenes/ed4.png" class="ed" alt="ed2" width="85%">
+                        <div>
+                            <h1 class="recuadrop3">$2.100.000</h1>
+                            <h1 class="recuadrop4">$900.000</h1>
+                        </div>
+                        <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="43" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 43%">43%</div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="cajaInversion">
+                        <div class="recuadro2">
+                            <div class="recuadrop2">
+                                <h3>Alamo IV</h3>
+                                <h1>Santa Fe | Edificio</h1>
+                            </div>
+                            <div>
+                                <img src="../Imágenes/logoinversion.png" class="recuadroimg2" alt="ed1">
+                            </div>
+                        <img src="../Imágenes/ed5.png" class="ed" alt="ed5" width="85%">
+                        <div>
+                            <h1 class="recuadrop3">$1.400.000</h1>
+                            <h1 class="recuadrop4">$1.100.000</h1>
+                        </div>
+                        <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="79" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 79%">79%</div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="cajaEstudio">
+                        <div class="recuadro2">
+                            <div class="recuadrop2">
+                                <h3>Padel Outdoor</h3>
+                                <h1>Recreo | Club</h1>
+                            </div>
+                            <div>
+                                <img src="../Imágenes/logoestudio.png" class="recuadroimg2" alt="ed1">
+                            </div>
+                        <img src="../Imágenes/ed6.png" class="ed" alt="ed6" width="85%">
+                        <div>
+                            <h1 class="recuadrop3">$900.000</h1>
+                            <h1 class="recuadrop4">$000.000</h1>
+                        </div>
+                        <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 0%">0%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cajaInversion">
+                        <div class="recuadro2">
+                            <div class="recuadrop2">
+                                <h3>Alto Santa Fe</h3>
+                                <h1>Santa Fe | Shopping</h1>
+                            </div>
+                            <div>
+                                <img src="../Imágenes/logoinversion.png" class="recuadroimg2" alt="ed1">
+                            </div>
+                        <img src="../Imágenes/ed7.png" class="ed" alt="ed7" width="85%">
+                        <div>
+                            <h1 class="recuadrop3">$1.750.000</h1>
+                            <h1 class="recuadrop4">$250.000</h1>
+                        </div>
+                        <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="14" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 14%">14%</div>
+                        </div>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <img src="../Imágenes/logoestudio.png" class="recuadroimg2" alt="ed1">
-                </div>
-            </div>
-            <hr>
-            <img src="../Imágenes/ed1.png" class="ed" alt="ed1" width="85%">
-            <div>
-                <h1 class="recuadrop3">$1.500.000</h1>
-                <h1 class="recuadrop4">$0.000.000</h1>
-            </div>
-        </div>
-        <div class="caja">
-            <div class="recuadro2">
-                <div class="recuadrop2">
-                    <h3>Country "Santomas"</h3>
-                    <h1>Santo Tomé | Loteo</h1>
-                </div>
-                <div>
-                    <img src="../Imágenes/logoestudio.png" class="recuadroimg2" alt="ed1">
-                </div>
-            </div>
-            <hr>
-            <img src="../Imágenes/ed3.png" class="ed" alt="ed3" width="85%">
-            <div>
-                <h1 class="recuadrop3">$1.000.000</h1>
-                <h1 class="recuadrop4">$0.000.000</h1>
-            </div>
-        </div>
-        <div class="caja">
-            <div class="recuadro2">
-                <div class="recuadrop2">
-                    <h3>CAM 103</h3>
-                    <h1>Santa Fe | Edificio</h1>
-                </div>
-                <div>
-                    <img src="../Imágenes/logoinversion.png" class="recuadroimg2" alt="ed1">
-                </div>
-            </div>
-            <hr>
-            <img src="../Imágenes/ed2.png" class="ed" alt="ed2" width="85%">
-            <div>
-                <h1 class="recuadrop3">$1.900.000</h1>
-                <h1 class="recuadrop4">$1.300.000</h1>
-            </div>
-        </div>
-        <div class="caja">
-            <div class="recuadro2">
-                <div class="recuadrop2">
-                    <h3>CAM 101</h3>
-                    <h1>Santa Fe | Edificio</h1>
-                </div>
-                <div>
-                    <img src="../Imágenes/logoinversion.png" class="recuadroimg2" alt="ed1">
-                </div>
-            </div>
-            <hr>
-            <img src="../Imágenes/ed4.png" class="ed" alt="ed2" width="85%">
-            <div>
-                <h1 class="recuadrop3">$2.100.000</h1>
-                <h1 class="recuadrop4">$900.000</h1>
-            </div>
-        </div>
-        <div class="caja">
-            <div class="recuadro2">
-                <div class="recuadrop2">
-                    <h3>Alamo IV</h3>
-                    <h1>Santa Fe | Edificio</h1>
-                </div>
-                <div>
-                    <img src="../Imágenes/logoinversion.png" class="recuadroimg2" alt="ed1">
-                </div>
-            </div>
-            <hr>
-            <img src="../Imágenes/ed5.png" class="ed" alt="ed5" width="85%">
-            <div>
-                <h1 class="recuadrop3">$1.400.000</h1>
-                <h1 class="recuadrop4">$1.100.000</h1>
-            </div>
-        </div>
-        <div class="caja">
-            <div class="recuadro2">
-                <div class="recuadrop2">
-                    <h3>Padel Outdoor</h3>
-                    <h1>Recreo | Club</h1>
-                </div>
-                <div>
-                    <img src="../Imágenes/logoestudio.png" class="recuadroimg2" alt="ed1">
-                </div>
-            </div>
-            <hr>
-            <img src="../Imágenes/ed6.png" class="ed" alt="ed6" width="85%">
-            <div>
-                <h1 class="recuadrop3">$900.000</h1>
-                <h1 class="recuadrop4">$000.000</h1>
-            </div>
-        </div>
-        <div class="caja">
-            <div class="recuadro2">
-                <div class="recuadrop2">
-                    <h3>Alto Santa Fe</h3>
-                    <h1>Santa Fe | Shopping</h1>
-                </div>
-                <div>
-                    <img src="../Imágenes/logoinversion.png" class="recuadroimg2" alt="ed1">
-                </div>
-            </div>
-            <hr>
-            <img src="../Imágenes/ed7.png" class="ed" alt="ed7" width="85%">
-            <div>
-                <h1 class="recuadrop3">$1.750.000</h1>
-                <h1 class="recuadrop4">$250.000</h1>
-            </div>
-        </div>
-    </main>
+                
+                <a href="https://wa.me/5493424322771" target="_blank"><img src="../Imágenes/wpp.png" alt="WhatsApp" class="wpp"></a>
+            </main>           
 
-    <footer>
-        <hr>
-        <div class="divfooter">
-            <ul class="ulfooter">
-                <li><h3>SUMATE AL EQUIPO</h3></li>
-                <hr>
-                <li class="lifooter"><a href="../Páginas/inverti.html"><h2>Invertí</h2></a></li>
-                <li class="lifooter"><a href="../Páginas/financiate.html"><h2>Financiate</h2></a></li>
-                <li class="lifooter"><a href="../Páginas/Contacto.html"><h2>Contacto</h2></a></li>
-            </ul>
+            <footer class="fondofooter" id="abajo"> <!-- Pie de página -->
+                <div class="divfooter">
+                    <ul class="ulfooter">
+                        <li><h3>SUMATE AL EQUIPO</h3></li>
+                        <hr>
+                        <li class="lifooter"><a href="inverti.html"><h2>Invertí</h2></a></li>
+                        <li class="lifooter"><a href="../Páginas/financiate.html"><h2>Financiate</h2></a></li>
+                        <li class="lifooter"><a href="../Páginas/Contacto.html"><h2>Contacto</h2></a></li>
+                    </ul>
+                </div>
+                <div class="divfooter">
+                    <ul class="ulfooter">
+                        <li><h3>QUIENES SOMOS</h3></li>
+                        <hr>
+                        <li class="lifooter"><a href="../Páginas/nosotros.html"><h2>Nosotros</h2></a></li>
+                        <li class="lifooter"><a href="../Páginas/nosotros.html"><h2>Asociados</h2></a></li>
+                        <li class="lifooter"><a href="../Páginas/estadisticas.html"><h2>Estadísticas</h2></a></li>
+                    </ul>
+                </div>
+                <div class="divfooter">
+                    <ul class="ulfooter">
+                        <li><h3>INFO</h3></li>
+                        <hr>
+                        <li class="lifooter"><a href="../Páginas/Contacto.html"><h2>Información legal</h2></a></li>
+                        <li class="lifooter"><a href="../Páginas/Contacto.html"><h2>Información financiera</h2></a></li>
+                        <li class="lifooter"><a href="../Páginas/Contacto.html"><h2>Políticas y privacidad</h2></a></li>
+                    </ul>
+                </div>
+                <div>
+                    <a href="#arriba"><h2>Volver arriba</h2></a>
+                </div>
+            </footer>
+
+    <!-- SCRIPT JS DE BOOTSTRAP -->
+            <script src="js/bootstrap.min.js"></script>
         </div>
-        <div class="divfooter">
-            <ul class="ulfooter">
-                <li><h3>QUIENES SOMOS</h3></li>
-                <hr>
-                <li class="lifooter"><a href="../Páginas/nosotros.html"><h2>Nosotros</h2></a></li>
-                <li class="lifooter"><a href="../Páginas/nosotros.html"><h2>Asociados</h2></a></li>
-                <li class="lifooter"><a href="../Páginas/estadisticas.html"><h2>Estadísticas</h2></a></li>
-            </ul>
-        </div>
-        <div class="divfooter">
-            <ul class="ulfooter">
-                <li><h3>INFO</h3></li>
-                <hr>
-                <li class="lifooter"><a href="../Páginas/Contacto.html"><h2>Información legal</h2></a></li>
-                <li class="lifooter"><a href="../Páginas/Contacto.html"><h2>Información financiera</h2></a></li>
-                <li class="lifooter"><a href="../Páginas/Contacto.html"><h2>Políticas y privacidad</h2></a></li>
-            </ul>
-        </div>
-        <div>
-            <a href="#arriba2">Volver arriba</a>
-        </div>
-    </footer>
-    
-    
 </body>
 </html>
