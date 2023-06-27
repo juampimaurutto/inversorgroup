@@ -1,0 +1,295 @@
+/* RESETEO */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Configuracion del html */
+html{
+    font-size: 62.5%;  /* Ya no seria el 100% */
+}
+
+/* ----------------------- ESTRUCTURA CON GRIDS --------------------- */
+
+.ContenedorTotal{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas: 
+        "menu"
+        "titulo"
+        "productos"
+        "pie";
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.areaMenu{
+    grid-area: menu;
+    background-color: rgb(255, 164, 45);
+    height: 200px;
+    @media screen and (max-width: 768px) {
+        height: 120px;
+    }
+}
+
+.areaTitulo{
+    grid-area: titulo;
+    background-color: rgb(161, 161, 161);
+}
+
+.areaProductos{
+    grid-area: productos;
+    background-color: rgb(216, 216, 216);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+p{
+    font-size: 10px;   /* Ya no es 16px */
+}
+
+/* 1rem = 16px --> por defecto */
+/* AHORA 1 rem = 10px por el cambio en htm */
+
+.navbar{
+    margin-top: 0;
+    grid-area: menu;
+    position: absolute;
+    right: 0;
+    top: 10%; 
+    font-size: 13px;
+}
+
+/* CLASE */
+.letranaranja{
+    color: rgb(255, 180, 81);
+    padding: 2%;
+    text-align: center;
+    @media screen and (max-width: 768px) {
+        font-size: 15px;
+    }
+    }
+
+.wpp{
+    position: fixed; right: 0;
+    top: 80%;
+    height: 50px;
+    width: 50px;
+    padding: 40px;
+    border-radius: 20%;
+}
+
+.portada{
+    height: 160px;
+    width: 400px;
+    margin: 2%;
+    @media screen and (max-width: 768px) {
+        height: 108px;
+        width: 240px;
+        padding: 18px;
+    }
+}
+
+/* Configuracion Formularios y sus partes */
+form{
+    font-size: 15px;
+    padding: 40px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+label{
+    margin: 10px;
+    color: #505050;
+}
+input{
+    margin: 10px;
+}
+
+/* Configuracion de los Hs */
+h1{
+    font-size: 9px;
+    @media screen and (max-width: 768px) {
+        font-size: 7px;
+    }
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+h2{
+    font-size: 12px;
+    @media screen and (max-width: 768px) {
+        font-size: 10px;
+    }
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+h3{
+    font-size: 15px;
+    @media screen and (max-width: 768px) {
+        font-size: 10px;
+    }
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+h4{
+    font-size: 20px;
+    @media screen and (max-width: 768px) {
+        font-size: 15px;
+    }
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+h5{
+    font-size: 28px;
+    @media screen and (max-width: 768px) {
+        font-size: 18px;
+    }
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+h6{
+    font-size: 40px;
+    @media screen and (max-width: 768px) {
+        font-size: 24px;
+    }
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+/* Titulos y subtitulos de seccion */
+.tituloseccion{
+    padding: 2%;
+    color: #505050;
+}
+.subtituloseccion{
+    padding: 2%;
+    color: #505050;
+}
+.portadaseccion{
+    width: 100%;
+}
+.cajaEstudio{
+    display: inline-block;
+    background-color: rgb(255, 142, 36);
+    margin: 50px;
+    height: 400px;
+    width: 270px;
+    border: 2px solid rgb(26, 25, 29);
+    max-width: 100%;
+    @media screen and (max-width: 768px) {
+        height: 380px;
+        width: 270px;
+        border: 1px solid rgb(26, 25, 29);
+        margin: 20px;
+    }
+}
+
+.cajaInversion{
+    @extend .cajaEstudio;
+    background-color: rgb(255, 230, 0);
+    }
+
+.cajaCerrado{
+    @extend .cajaEstudio;
+    background-color: rgb(11, 161, 49);
+    }
+
+.progress{
+    margin: 7%;
+}
+
+.ed{
+    margin: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tituloed{
+    margin: 7%;
+    color: #333333;
+}
+.recuadroFinanciacion{
+    display: inline-block;
+    background-color: rgb(255, 230, 0);
+    margin: 20px;
+    height: 30px;
+    width: 180px;
+    border: 2px solid rgb(26, 25, 29);
+    @media screen and (max-width: 768px) {
+        margin: 5px;
+        height: 21px;
+        width: 126px;
+    }
+}
+.recuadroEstudio{
+    @extend .recuadroFinanciacion;
+    background-color: rgb(255, 142, 36);
+}
+
+.recuadroCerrado{
+    @extend .recuadroFinanciacion;
+    background-color: rgb(11, 161, 49);
+}
+.tituloed1{
+    margin: 5%;
+    color: #333333;
+}
+.recuadrop {
+    padding: 4%;
+    float: right;
+    width: 75%;
+}
+.recuadroimg {
+    float: left;
+    width: 29px;
+    @media screen and (max-width: 768px) {
+        width: 15px;
+    }
+}
+
+/* Configuracion cuadro ED */
+.recuadro2{
+    display: inline-block;
+    margin: 5%;
+    height: 30px;
+    width: 240px;
+}
+.recuadroimg2 {
+    float: right;
+    margin-right: 0%;
+    width: 29px;
+}
+
+.recuadrop2 {
+    margin-left: 4%;
+    float: left;
+    width: 75%;
+}
+.recuadrop3 {
+    margin-left: 7%;
+    float: left;
+    width: 65%;
+}
+.recuadro4 {
+    float: right;   
+}
+
+/*  ----------------- Configuracion FOOTER ------------------ */
+
+.fondofooter{
+    grid-area: pie;
+    background-color: rgb(105, 105, 105);
+}
+
+.divfooter{
+    display: inline-block;
+    margin: 50px;
+    color: rgb(58, 58, 58);
+    @media screen and (max-width: 768px) {
+        margin: 20px;
+    }
+}
+
+ul li a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  
