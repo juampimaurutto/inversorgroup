@@ -9,10 +9,16 @@ html{
     font-size: 62.5%;  /* Ya no seria el 100% */
 }
 
+/* ---- Definimos colores para el CSS ---- */
+$color-primario: rgb(248, 156, 35);
+$color-secundario: rgb(161, 161, 161);
+$color-terciario: #505050;
+
 /* ----------------------- ESTRUCTURA CON GRIDS --------------------- */
 
 .ContenedorTotal{
     display: grid;
+    background-color: #d1d1d1;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto 1fr auto;
     grid-template-areas: 
@@ -20,14 +26,14 @@ html{
         "titulo"
         "productos"
         "pie";
-    margin: 0;
-    padding: 0;
+    margin: 0%;
+    padding: 0%;
     overflow: hidden;
 }
 
 .areaMenu{
     grid-area: menu;
-    background-color: rgb(255, 164, 45);
+    background-color: $color-primario;
     height: 200px;
     @media screen and (max-width: 768px) {
         height: 120px;
@@ -36,7 +42,7 @@ html{
 
 .areaTitulo{
     grid-area: titulo;
-    background-color: rgb(161, 161, 161);
+    background-color: $color-secundario;
 }
 
 .areaProductos{
@@ -49,7 +55,10 @@ html{
 }
 
 p{
-    font-size: 10px;   /* Ya no es 16px */
+    font-size: 150%;
+    margin: 2%; 
+    text-align: justify; 
+    margin-top: 0%;
 }
 
 /* 1rem = 16px --> por defecto */
@@ -66,7 +75,7 @@ p{
 
 /* CLASE */
 .letranaranja{
-    color: rgb(255, 180, 81);
+    color: $color-primario;
     padding: 2%;
     text-align: center;
     @media screen and (max-width: 768px) {
@@ -102,7 +111,7 @@ form{
 }
 label{
     margin: 10px;
-    color: #505050;
+    color: $color-terciario;
 }
 input{
     margin: 10px;
@@ -155,18 +164,18 @@ h6{
 /* Titulos y subtitulos de seccion */
 .tituloseccion{
     padding: 2%;
-    color: #505050;
+    color: $color-terciario;
 }
 .subtituloseccion{
     padding: 2%;
-    color: #505050;
+    color: $color-terciario;
 }
 .portadaseccion{
     width: 100%;
 }
 .cajaEstudio{
     display: inline-block;
-    background-color: rgb(255, 142, 36);
+    background-color: $color-primario;
     margin: 50px;
     height: 400px;
     width: 270px;
@@ -220,7 +229,7 @@ h6{
 }
 .recuadroEstudio{
     @extend .recuadroFinanciacion;
-    background-color: rgb(255, 142, 36);
+    background-color: $color-primario;
 }
 
 .recuadroCerrado{
@@ -275,7 +284,7 @@ h6{
 
 .fondofooter{
     grid-area: pie;
-    background-color: rgb(105, 105, 105);
+    background-color: $color-secundario;
 }
 
 .divfooter{
@@ -292,4 +301,24 @@ ul li a {
     color: inherit;
   }
 
-  
+.boton {
+    margin: 5%;
+    font-size: 120%;
+    }
+
+.formArchivo {
+    @media screen and (max-width: 768px) {
+        font-size: 90%;        
+    }
+}
+
+.recuadroGrafico{
+    height: 500px;
+    margin: 2%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (max-width: 768px) {
+        height: 300px;        
+    }
+}

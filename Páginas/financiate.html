@@ -1,14 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inversor Group</title>
-    <link rel="shortcut icon" href="../Imágenes/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="../ccs/estilos.css">
-    <!DOCTYPE html>
-    <html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,24 +8,35 @@
         <link rel="shortcut icon" href="../Imágenes/logo.png" type="image/x-icon"> <!-- Favicon -->
     
         <!-- CSS -->
-        <link rel="stylesheet" href="../ccs/estilos.css">
+        <link rel="stylesheet" href="../ccs/bootstrap.min.css">
+    
+        <link rel="stylesheet" href="../css/estilos.css">
     </head>
     <body>
-        
+        <div class="ContenedorTotal">
         
         <!-- ETIQUETAS SEMÁNTICAS! -->
-        <header class=fondoNaranja id="arriba3"> <!-- Encabezado -->
+        <header id="arriba" class="areaMenu"> <!-- Encabezado -->
             <img src="../Imágenes/portada.png" class="portada" alt="logo">
-            <nav> <!-- Menú de navegación -->
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="inverti.html">Invertí</a></li>
-                    <li><a href="financiate.html">Financiate</a></li>
-                    <li><a href="nosotros.html">Nosotros</a></li>
-                    <li><a href="estadisticas.html">Estadísticas</a></li>
-                    <li><a href="Contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
+            <div class="navbar">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                          <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                          <a class="nav-link" href="inverti.html">Invertí</a>
+                          <a class="nav-link" href="../Páginas/financiate.html">Financiate</a>
+                          <a class="nav-link" href="../Páginas/nosotros.html">Nosotros</a>
+                          <a class="nav-link" href="../Páginas/estadisticas.html">Estadísticas</a>
+                          <a class="nav-link" href="../Páginas/Contacto.html">Contacto</a>
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
         </header>
 
     <main>
@@ -45,20 +47,25 @@
         <div class="subtituloseccion">
             <h3>Envianos tu proyecto para que nuestros evaluadores lo analicen</h3>
         </div>
+        <div>
+            <p>¡Nos encanta escuchar tus propuestas y proyectos inmobiliarios! En Inversor Group, valoramos la creatividad y la innovación en el sector de las inversiones inmobiliarias. Si tienes una idea o proyecto propio y estás buscando inversores, estaremos encantados de ayudarte a hacerlo realidad. Utiliza el formulario adjunto para enviarnos los detalles de tu propuesta. Nuestro equipo de expertos analizará cuidadosamente cada proyecto y trabajará arduamente para encontrar los inversores adecuados que puedan impulsar tu visión. Juntos, podemos convertir tus sueños en oportunidades de inversión exitosas. ¡Esperamos con ansias conocer tus proyectos y trabajar contigo en el emocionante mundo de las inversiones inmobiliarias!</p>
+        </div>
         <hr>
         <div>
-            <div class="recuadro">
-                <h3 class="recuadrop">Enviar proyecto</h3>
-            </div>
+            <form action="tu_script_de_procesamiento.php" method="POST" enctype="multipart/form-data" class="formArchivo">
+                <label for="archivo">Selecciona un archivo:</label>
+                <input type="file" id="archivo" name="archivo">
+                <input type="submit" value="Enviar">
+            </form>
         </div>
     </main>
-    <footer>
-        <hr>
+    
+    <footer class="fondofooter" id="abajo"> <!-- Pie de página -->
         <div class="divfooter">
             <ul class="ulfooter">
                 <li><h3>SUMATE AL EQUIPO</h3></li>
                 <hr>
-                <li class="lifooter"><a href="../Páginas/inverti.html"><h2>Invertí</h2></a></li>
+                <li class="lifooter"><a href="inverti.html"><h2>Invertí</h2></a></li>
                 <li class="lifooter"><a href="../Páginas/financiate.html"><h2>Financiate</h2></a></li>
                 <li class="lifooter"><a href="../Páginas/Contacto.html"><h2>Contacto</h2></a></li>
             </ul>
@@ -81,12 +88,14 @@
                 <li class="lifooter"><a href="../Páginas/Contacto.html"><h2>Políticas y privacidad</h2></a></li>
             </ul>
         </div>
-            <div>
-                <a href="#arriba3">Volver arriba</a>
-            </div>
+        <div>
+            <a href="#arriba"><h2>Volver arriba</h2></a>
+        </div>
     </footer>
 
-    
+        <!-- SCRIPT JS DE BOOTSTRAP -->
+        <script src="../js/bootstrap.min.js"></script>
+    </div>
     
 </body>
 </html>
