@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Inversor Group</title>
+        <title>Contacto</title>
         <link rel="shortcut icon" href="../Imágenes/logo.png" type="image/x-icon"> <!-- Favicon -->
     
         <!-- CSS -->
@@ -15,10 +15,10 @@
     <body>
         <div class="ContenedorTotal">
         
-        <!-- ETIQUETAS SEMÁNTICAS! -->
-        <header id="arriba" class="areaMenu"> <!-- Encabezado -->
-            <img src="../Imágenes/portada.png" class="portada" alt="logo">
-            <div class="navbar">
+        
+        <header id="arriba" class="areaMenu"> 
+            <img src="../Imágenes/portada.png" class="portada" alt="Logo de la empresa">
+            <div>
                 <nav class="navbar navbar-expand-lg">
                     <div class="container-fluid">
                       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,12 +26,12 @@
                       </button>
                       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
-                          <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                          <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
                           <a class="nav-link" href="inverti.html">Invertí</a>
                           <a class="nav-link" href="../Páginas/financiate.html">Financiate</a>
                           <a class="nav-link" href="../Páginas/nosotros.html">Nosotros</a>
                           <a class="nav-link" href="../Páginas/estadisticas.html">Estadísticas</a>
-                          <a class="nav-link" href="../Páginas/Contacto.html">Contacto</a>
+                          <a class="nav-link active" href="../Páginas/Contacto.html">Contacto</a>
                         </div>
                       </div>
                     </div>
@@ -39,29 +39,34 @@
             </div>
         </header>
         
-    <main> <!-- Contenido principal -->
-        <img src="../Imágenes/portadaContacto.png" alt="Contacto" class="portadaseccion">
+    <main>
+        <img src="../Imágenes/portadaContacto.png" alt="Imagen de un dedo señalando diversos medios de contacto" class="portadaseccion">
         <div class="tituloseccion">
             <h5>Contacto</h5>
         </div>
+        <p>¡Gracias por tu interés en nuestras inversiones inmobiliarias!
+
+            Estamos emocionados de ayudarte a explorar las oportunidades de inversión en el sector inmobiliario. Simplemente déjanos tus datos a continuación y nos pondremos en contacto contigo en breve para brindarte más información y responder a todas tus preguntas.
+            
+            Estamos comprometidos a ofrecer soluciones personalizadas y rentables para tus necesidades de inversión. Nuestro equipo experto en el mercado inmobiliario te guiará a través de todo el proceso y te proporcionará asesoramiento integral para maximizar tus inversiones.
+            
+            No pierdas la oportunidad de obtener rendimientos sólidos en el mercado inmobiliario. Completa el formulario a continuación y comienza tu viaje hacia el éxito financiero con nosotros.
+            
+            ¡Esperamos con ansias colaborar contigo!
+            </p>
         <div class="subtituloseccion">
+           
             <h3>Dejanos tu mensaje y un integrante de Inversor Group se contactará a la brevedad!</h3>
         </div>
-        <form action="" class="formArchivo"> <!-- Formulario -->
+        <form class="formContacto"> 
             <label for="nombre">Nombre:</label>
-            <input type="text" name="nombre" id="nombre" required>
-            <br>
+            <input type="text" name="nombre" id="nombre" required placeholder="Ingrese su nombre">
             <label for="mail">Correo:</label>
-            <input type="email" name="mail" id="mail" required>
-            <br>
+            <input type="email" name="mail" id="mail" required placeholder="Ingrese su email">
             <label for="cel">Cel. (opcional):</label>
-            <input type="number" name="cel" id="cel">
-            <br>
+            <input type="number" name="cel" id="cel" placeholder="Ingrese su teléfono">
             <label for="mensaje">Deja tu mensaje</label>
             <textarea name="mensaje" id="mensaje" required placeholder="Escribe tu mensaje" cols="30" rows="10"></textarea>
-            <br>
-
-            <!-- Menú desplegable -->
             <label for="pais">País:</label>
             <select name="pais" id="pais">
                 <option value="ARG">Argentina</option>
@@ -69,11 +74,9 @@
                 <option value="CHI">Chile</option>
                 <option value="Otros">Otros</option>
             </select>
-            <br>
             <input type="submit" value="Enviar formulario">
         </form>
-        
-        <a href="https://wa.me/5493424322771" target="_blank"><img src="../Imágenes/wpp.png" alt="WhatsApp" class="wpp"></a>
+    
 
     </main>
     <footer class="fondofooter" id="abajo"> <!-- Pie de página -->
@@ -109,7 +112,7 @@
         </div>
     </footer>
 
-        <!-- SCRIPT JS DE BOOTSTRAP -->
+        
         <script src="../js/bootstrap.min.js"></script>
     </div>
 

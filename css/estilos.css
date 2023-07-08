@@ -1,16 +1,13 @@
-/* RESETEO */
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
 }
 
-/* Configuracion del html */
 html {
-  font-size: 62.5%; /* Ya no seria el 100% */
+  font-size: 62.5%;
 }
 
-/* ---- Definimos colores para el CSS ---- */
-/* ----------------------- ESTRUCTURA CON GRIDS --------------------- */
 .ContenedorTotal {
   display: grid;
   background-color: #d1d1d1;
@@ -40,7 +37,11 @@ html {
 
 .areaProductos {
   grid-area: productos;
-  background-color: rgb(216, 216, 216);
+  background-image: url("../Imágenes/fondoPrincipal.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,38 +54,42 @@ p {
   text-align: justify;
   margin-top: 0%;
 }
+@media screen and (max-width: 768px) {
+  p {
+    font-size: 120%;
+  }
+}
 
-/* 1rem = 16px --> por defecto */
-/* AHORA 1 rem = 10px por el cambio en htm */
 .navbar {
   margin-top: 0;
   grid-area: menu;
   position: absolute;
   right: 0;
   top: 10%;
-  font-size: 13px;
+  font-size: 20px;
+  background-color: rgb(248, 156, 35);
+}
+@media screen and (min-width: 769px) and (max-width: 991px) {
+  .navbar {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .navbar {
+    font-size: 13px;
+  }
 }
 
-/* CLASE */
 .letranaranja {
   color: rgb(248, 156, 35);
   padding: 2%;
   text-align: center;
+  font-style: oblique;
 }
 @media screen and (max-width: 768px) {
   .letranaranja {
     font-size: 15px;
   }
-}
-
-.wpp {
-  position: fixed;
-  right: 0;
-  top: 80%;
-  height: 50px;
-  width: 50px;
-  padding: 40px;
-  border-radius: 20%;
 }
 
 .portada {
@@ -100,7 +105,6 @@ p {
   }
 }
 
-/* Configuracion Formularios y sus partes */
 form {
   font-size: 15px;
   padding: 40px;
@@ -116,7 +120,6 @@ input {
   margin: 10px;
 }
 
-/* Configuracion de los Hs */
 h1 {
   font-size: 9px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -177,15 +180,16 @@ h6 {
   }
 }
 
-/* Titulos y subtitulos de seccion */
 .tituloseccion {
   padding: 2%;
   color: #505050;
+  font-style: oblique;
 }
 
 .subtituloseccion {
   padding: 2%;
   color: #505050;
+  font-weight: bolder;
 }
 
 .portadaseccion {
@@ -279,7 +283,6 @@ h6 {
   }
 }
 
-/* Configuracion cuadro ED */
 .recuadro2 {
   display: inline-block;
   margin: 5%;
@@ -309,7 +312,6 @@ h6 {
   float: right;
 }
 
-/*  ----------------- Configuracion FOOTER ------------------ */
 .fondofooter {
   grid-area: pie;
   background-color: rgb(161, 161, 161);
@@ -337,8 +339,25 @@ ul li a {
 }
 
 @media screen and (max-width: 768px) {
-  .formArchivo {
+  .formFinanciate {
     font-size: 90%;
+  }
+}
+
+.formContacto {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+@media screen and (min-width: 769px) and (max-width: 991px) {
+  .formContacto {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .formContacto {
+    width: 100%;
   }
 }
 
@@ -352,6 +371,57 @@ ul li a {
 @media screen and (max-width: 768px) {
   .recuadroGrafico {
     height: 300px;
+  }
+}
+
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.texto-imagen-contenedor,
+.imagen-texto-contenedor {
+  flex-basis: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 0%;
+}
+
+.textoNosotros {
+  text-align: justify;
+  width: 50%;
+  margin: 5%;
+}
+
+.imagenNosotros {
+  flex-basis: 50%;
+  width: 80%;
+  height: auto;
+  margin: 10%;
+}
+
+.imagen-texto-contenedor .textoNosotros {
+  text-align: justify;
+}
+
+@media (max-width: 991px) {
+  .textoNosotros,
+  .imagenNosotros {
+    flex-basis: 100%;
+  }
+  .imagenNosotros {
+    width: 80%;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+  }
+  .texto-imagen-contenedor,
+  .imagen-texto-contenedor {
+    flex-direction: column;
+  }
+  .textoNosotros {
+    width: 100%;
+    padding: 5%;
   }
 }
 
